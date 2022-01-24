@@ -245,8 +245,51 @@ a database system defines a
 		if you want those computations and actioins you write them in host language ex. c/c++/java/python with enbedded SQL queries that access the data in the database 
 		application programs - programs that are used to interact with the database in this fashion 
 
-1.5 Database Design 
+1.5 Database Design (did not 100% get; go over these pages)
+- database systems : designed to manage large bodies of information; information does not exsist in isolation; the information is a part of an operation of some enterprise whose end product maybe information from the database 
 
+- database design
+	- involves the design of the database schema 
+	- the design of the complete database application enviorment -> that meets the needs of the enterprise being modeled -> requires attention to a broader set of issues 
+- high level model
+	- provides the database designer with conceptual framework 
+	--> specifies the data requirements of the database users and how the database will be structured to fulfill the requirements 
+	- initial phase of database design : to characterize fully the data needs of the prospective database users 
+	- database deigners --> interact with domain expets and users to carry out the task 
+	- outcome = specification of user requirements 
+--> The designer chhoses the datamodel 
+	- by applying the concepts of choosen data maodel  --> translates requirements into conceptual schema of the database 
+	conceptual-design : the schema that is developed at this phase; provides detailed over view of the enterprise
+
+- designer reviews the schema to confirm that all data requirements are indeed satisfied and are not in conflict with one another. 
+- The designer also examines the design to remove any redundant features. 
+- The focus at this point is on describing the data and their relationships, rather than on specifying physical storage details.
+
+
+- relational model
+	- the conceptual-design process involves 
+		- decisions on what attributes we want to capture in the database and how to group these attributes to form the various tables. 
+		- The “what” part is basically a business decision, and we shall not discuss it further in this text. 
+		- The “how” part is mainly a computer-science problem. 
+			- two ways to tackle the problem
+				- to use the entity-relationship model 
+				- to employ a set of algorithms (collectively known as normalization that takes as input the set of all attributes and generates a set of tables 
+
+- A fully developed conceptual schema indicates 
+	- the functional requirements of the enterprise. 
+		- users describe the kinds of operations (or transactions) that will be performed on the data. 
+		- Example operations include 
+			- modifying or updating data
+			- searching for and retrieving specific data
+			- deleting data
+		- the designer can review the schema to ensure it meets functional requirements.
+
+- The process of moving from an abstract data model to the implementation of the database proceeds in two final design phases. 
+	- In the logical-design phase, the designer maps the high-level conceptual schema onto the implementation data model of the database system that will be used. 
+		- The designer uses the resulting system-specific database schema in the subsequent physical-design phase, in which the physical features of the database are specified. 
+		- These features include the form of file organization and the internal storage structures
+
+1.6 Database Engine 
 
 
 
