@@ -22,3 +22,5 @@ Chapter 2
 		- 
 
 	- foreign 
+		- Try to understand this from the book
+		- the foreign key is relating one attribute to another attribute 
